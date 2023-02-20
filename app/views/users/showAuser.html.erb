@@ -1,11 +1,10 @@
 <h1>Generate a single user hardcoded from table</h1>
 
-<h1><%= ActiveRecord::Base.connection.tables%></h1>
-<%
-=begin%>
- <h2><%= @users.surname%></h2>
-<%
-=end%>
+
+
+ <h2><%= User.find(params[:id]).name%></h2>
+
+
 
 
 
