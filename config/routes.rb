@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  #this was automatically generated because the controller command had no --skip-routes flag
+  get '/users' , to:"users#index"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # first page we get to see
@@ -12,3 +14,5 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
 end
+
+
