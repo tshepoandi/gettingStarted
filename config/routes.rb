@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   root "articles#index"
 
   # page we path to
-  # get "/articles" , to: "articles#index"
+  get "/articles" , to: "articles#index"
 
   # this takes parameter of id , right after getting articles ...show would probably be a file we create.
   get "/articles/:id", to: "articles#show"
