@@ -8,4 +8,7 @@ we need to make sure its a single object , otherwise we wont get thatthing.title
 <h1><%=@article.title %></h1>
 <p><%= @article.body %><p>
 
+<ul>
+    <li> <%= <%= link_to "Edit", edit_article_path(@article) %>%></li>
+
 
