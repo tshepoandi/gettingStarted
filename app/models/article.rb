@@ -1,4 +1,5 @@
 class Article < ApplicationRecord
+  include Visible
   has_many :comments
 
   validates :title, presence: true
@@ -6,7 +7,7 @@ class Article < ApplicationRecord
 
   VALID_STATUSES = ["public", "private", "archived"]
 
-  validates :status. inclusion {in: VALID_STATUSES}
+  validates :status, inclusion: {in: VALID_STATUSES}
 
   def archived?
     status == "archived"
